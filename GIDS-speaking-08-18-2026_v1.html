@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Keynote Speaking | John Thomas Foxworthy · GIDS</title>
+<meta name="description" content="John Thomas Foxworthy speaks on AI strategy, problem formulation, and the A.I.R. Framework for enterprise audiences. Book a speaking engagement."/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet"/>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',sans-serif;font-weight:300;background:#000;color:#fff;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+:root{--accent:#8AB4D4;--gold:#C9A84C;--border:rgba(255,255,255,0.08);--t2:rgba(255,255,255,0.62);--t3:rgba(255,255,255,0.32)}
+.container{max-width:1100px;margin:0 auto;padding:0 64px}
+@media(max-width:768px){.container{padding:0 24px}}
+.glass{background:rgba(0,0,0,0.44);backdrop-filter:blur(5px);-webkit-backdrop-filter:blur(5px);position:relative;overflow:hidden}
+.glass::before{content:'';position:absolute;inset:0;border-radius:inherit;padding:1.4px;background:linear-gradient(180deg,rgba(255,255,255,0.22) 0%,rgba(255,255,255,0.06) 22%,transparent 44%,transparent 56%,rgba(255,255,255,0.06) 78%,rgba(255,255,255,0.22) 100%);-webkit-mask:linear-gradient(#fff 0 0) content-box,linear-gradient(#fff 0 0);-webkit-mask-composite:xor;mask-composite:exclude;pointer-events:none}
+.t-display{font-family:'Cormorant Garamond',serif;font-weight:600;letter-spacing:-0.03em;line-height:1.05}
+.t-heading{font-family:'Cormorant Garamond',serif;font-weight:400;letter-spacing:-0.02em;line-height:1.1}
+.t-eyebrow{font-size:11px;font-weight:500;letter-spacing:0.15em;text-transform:uppercase;color:var(--t3)}
+.t-body{font-size:15px;line-height:1.72;color:var(--t2)}
+.t-body-sm{font-size:13px;line-height:1.65;color:var(--t3)}
+.btn{display:inline-block;background:var(--gold);color:#000;border:none;cursor:pointer;font-family:'Inter',sans-serif;font-weight:500;font-size:13px;border-radius:8px;padding:12px 28px;text-decoration:none;transition:background .2s}
+.btn:hover{background:#b8922e}
+.t-link{color:var(--accent);font-size:13px;font-weight:500;text-decoration:none;border-bottom:1px solid rgba(138,180,212,0.3);padding-bottom:1px}
+/* NAV */
+.navbar-wrap{position:fixed;top:0;left:0;right:0;z-index:100;padding:20px 64px 0}
+@media(max-width:768px){.navbar-wrap{padding:16px 24px 0}}
+.navbar{display:flex;align-items:center;justify-content:space-between;border-radius:12px;padding:10px 18px;border:1px solid var(--border)}
+.nav-logo{font-family:'Cormorant Garamond',serif;font-weight:600;font-size:18px;letter-spacing:-0.02em;color:#fff;text-decoration:none}
+.nav-back{font-size:13px;color:var(--t2);text-decoration:none;transition:color .2s}
+.nav-back:hover{color:#fff}
+/* PAGE */
+.page-hero{min-height:52vh;display:flex;flex-direction:column;justify-content:flex-end;padding-bottom:64px;padding-top:120px}
+.section{padding:80px 0}
+.section-inner{border-radius:4px;padding:56px 52px}
+@media(max-width:768px){.section-inner{padding:32px 20px}}
+.divider{height:1px;background:rgba(255,255,255,0.05);margin:0 64px}
+@media(max-width:768px){.divider{margin:0 24px}}
+/* EVENTS */
+.events-list{margin-top:40px;display:flex;flex-direction:column;gap:2px}
+.event-card{padding:36px 40px;border:1px solid var(--border);border-radius:2px;display:grid;grid-template-columns:160px 1fr;gap:32px;align-items:start;transition:border-color .3s}
+.event-card:hover{border-color:rgba(255,255,255,0.18)}
+@media(max-width:768px){.event-card{grid-template-columns:1fr;gap:12px}}
+.event-year{font-family:'Cormorant Garamond',serif;font-weight:600;font-size:42px;letter-spacing:-0.03em;color:rgba(255,255,255,0.15);line-height:1}
+.event-venue{font-size:10px;font-weight:500;letter-spacing:0.12em;text-transform:uppercase;color:var(--accent);margin-bottom:8px}
+.event-name{font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:600;letter-spacing:-0.01em;color:#fff;margin-bottom:8px}
+.event-detail{font-size:14px;color:var(--t2);line-height:1.6}
+/* TEACHING */
+.teaching-grid{display:grid;grid-template-columns:1fr 1fr;gap:2px;margin-top:32px}
+@media(max-width:768px){.teaching-grid{grid-template-columns:1fr}}
+.teaching-card{padding:32px 28px;border:1px solid var(--border);border-radius:2px}
+.teaching-org{font-size:10px;font-weight:500;letter-spacing:0.12em;text-transform:uppercase;color:var(--accent);margin-bottom:8px}
+.teaching-role{font-family:'Cormorant Garamond',serif;font-size:18px;font-weight:600;color:#fff;margin-bottom:8px;letter-spacing:-0.01em}
+/* TOPIC */
+.topic-block{padding:40px;border:1px solid var(--border);border-radius:2px;margin-top:32px}
+/* BIO STRIP */
+.bio-strip{display:grid;grid-template-columns:80px 1fr;gap:24px;align-items:center;margin-top:40px;padding:32px 36px;border:1px solid var(--border);border-radius:2px}
+@media(max-width:768px){.bio-strip{grid-template-columns:1fr}}
+/* REVEAL */
+.reveal{opacity:0;transform:translateY(20px);transition:opacity .6s ease,transform .6s ease}
+.reveal.visible{opacity:1;transform:translateY(0)}
+.reveal-delay-1{transition-delay:.08s}
+.reveal-delay-2{transition-delay:.16s}
+</style>
+</head>
+<body>
+
+<div class="navbar-wrap">
+  <nav class="navbar glass">
+    <a class="nav-logo" href="index.html">GIDS</a>
+    <a class="nav-back" href="index.html">← Back to main site</a>
+    <a href="#inquire" class="btn" style="padding:8px 18px;font-size:12px">Speaking Inquiries</a>
+  </nav>
+</div>
+
+<!-- HERO -->
+<section class="page-hero">
+  <div class="container">
+    <p class="t-eyebrow reveal" style="margin-bottom:20px">John Thomas Foxworthy · Speaking</p>
+    <h1 class="t-display reveal reveal-delay-1" style="font-size:clamp(38px,5vw,72px);max-width:760px;margin-bottom:24px">The most technical rooms in finance asked for the least technical skill.</h1>
+    <p class="t-body reveal reveal-delay-2" style="max-width:560px">John speaks on AI strategy, problem formulation, and the A.I.R. Framework for enterprise audiences — CIOs, CFOs, boards, and the people who advise them.</p>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- CONFIRMED ENGAGEMENTS -->
+<section class="section">
+  <div class="container">
+    <div class="section-inner glass">
+      <p class="t-eyebrow reveal" style="margin-bottom:20px">Confirmed Engagements</p>
+      <h2 class="t-heading reveal reveal-delay-1" style="font-size:clamp(26px,2.8vw,40px);max-width:600px">Where John has spoken.</h2>
+
+      <div class="events-list">
+        <div class="event-card glass reveal reveal-delay-1">
+          <div class="event-year">2026</div>
+          <div>
+            <p class="event-venue">Future Alpha · New York City</p>
+            <p class="event-name">AI Strategy & Problem Formulation</p>
+            <p class="event-detail">Top 3 most-requested presentation out of 120+ speakers. Audience: quants, portfolio managers, CIOs, and heads of risk at major financial institutions. The talk addressed why AI initiatives fail upstream — before any model is selected — and how to fix the formulation problem before the board asks.</p>
+          </div>
+        </div>
+
+        <div class="event-card glass reveal reveal-delay-2">
+          <div class="event-year">2026</div>
+          <div>
+            <p class="event-venue">Carnegie Mellon University · Pittsburgh</p>
+            <p class="event-name">Keynote Speaker & Judge, Master's Programs (MEIM)</p>
+            <p class="event-detail">Keynote address and judging panel for Carnegie Mellon University's Master of Entertainment Industry Management program. Engaged with graduate students on applied AI strategy in enterprise and creative industry contexts.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- TEACHING & INSTRUCTION -->
+<section class="section">
+  <div class="container">
+    <div class="section-inner glass">
+      <p class="t-eyebrow reveal" style="margin-bottom:20px">Teaching & Instruction</p>
+      <h2 class="t-heading reveal reveal-delay-1" style="font-size:clamp(26px,2.8vw,40px);margin-bottom:12px">The classroom is where the framework was stress-tested.</h2>
+      <p class="t-body reveal reveal-delay-1" style="max-width:600px;margin-bottom:0">Before GIDS advisory engagements, the A.I.R. Framework was built and refined through years of teaching AI/ML to technical graduate students at two top-ranked institutions.</p>
+
+      <div class="teaching-grid reveal reveal-delay-2">
+        <div class="teaching-card glass">
+          <p class="teaching-org">UC San Diego Extended Studies</p>
+          <p class="teaching-role">AI/ML Instructor · 2023–Present</p>
+          <p class="t-body-sm">Teaches Fundamentals of Data Science, No Code Data Mining, and Deep Learning AI. Member, ML Certification Board.</p>
+        </div>
+        <div class="teaching-card glass">
+          <p class="teaching-org">Caltech CTME</p>
+          <p class="teaching-role">AI/ML Instructor · 2023–2026</p>
+          <p class="t-body-sm">Taught Artificial Intelligence, Deep Learning, and Machine Learning at Caltech's Center for Technology & Management Education.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- THE TALK -->
+<section class="section">
+  <div class="container">
+    <div class="section-inner glass">
+      <p class="t-eyebrow reveal" style="margin-bottom:20px">The Talk</p>
+      <h2 class="t-heading reveal reveal-delay-1" style="font-size:clamp(26px,2.8vw,40px);margin-bottom:32px">What John speaks about.</h2>
+
+      <div class="topic-block glass reveal reveal-delay-2">
+        <p style="font-family:'Cormorant Garamond',serif;font-size:clamp(18px,2vw,26px);font-weight:400;letter-spacing:-0.01em;color:#fff;line-height:1.4;margin-bottom:20px">Why AI Initiatives Fail Before Anyone Writes a Line of Code</p>
+        <p class="t-body" style="margin-bottom:16px">The RAND, MIT, and S&P Global data is consistent: 80–95% of enterprise AI initiatives fail to deliver promised value. The common explanation is data quality, talent gaps, or vendor selection. The actual cause is upstream — an organization that cannot describe its AI initiative in one sentence that a smart, non-technical colleague would push back on is not ready to build.</p>
+        <p class="t-body" style="margin-bottom:16px">This talk gives boards, CIOs, and strategy teams the diagnostic frame to identify whether their current initiative is ready — and what to do before approving any further spend.</p>
+        <p class="t-body">Grounded in the A.I.R. Framework™ and more than two decades of applied AI work across financial services, insurance, marketing, manufacturing, retail, and legal sectors.</p>
+      </div>
+
+      <div style="margin-top:40px;padding:28px 32px;border:1px solid rgba(138,180,212,0.2);border-radius:2px" class="reveal reveal-delay-2">
+        <p style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:clamp(16px,1.6vw,22px);color:rgba(255,255,255,0.82);line-height:1.5;margin-bottom:12px">"The most technical people in finance asked for the least technical skill. How to state the problem clearly."</p>
+        <p class="t-body-sm">— John Thomas Foxworthy · Future Alpha 2026 · Top 3 of 120+ speakers</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- SPEAKING INQUIRY -->
+<section class="section" id="inquire">
+  <div class="container">
+    <div class="section-inner glass">
+      <p class="t-eyebrow reveal" style="margin-bottom:20px">Speaking Inquiries</p>
+      <h2 class="t-heading reveal reveal-delay-1" style="font-size:clamp(26px,2.8vw,40px);margin-bottom:16px">Book John for your event.</h2>
+      <p class="t-body reveal reveal-delay-1" style="max-width:580px;margin-bottom:36px">John speaks to boards, executive leadership teams, university programs, and professional conferences. Typical formats: 45-minute keynote, 30-minute strategic briefing, panel participation, and academic judging panels.</p>
+
+      <!-- INQUIRY CONTACT PLACEHOLDER -->
+      <div style="padding:40px;border:1px dashed rgba(138,180,212,0.2);border-radius:4px;text-align:center" class="reveal reveal-delay-2">
+        <p style="font-size:10px;font-weight:500;letter-spacing:0.12em;text-transform:uppercase;color:rgba(138,180,212,0.45);margin-bottom:16px">⚠ Pending — Speaking inquiry contact method</p>
+        <p class="t-body-sm">John to confirm: primary email address or dedicated Calendly speaking link.<br>This block will be replaced with the contact method or booking embed.</p>
+      </div>
+
+      <div class="bio-strip glass reveal reveal-delay-2" style="margin-top:40px">
+        <div style="width:80px;height:80px;border-radius:50%;border:1px dashed rgba(138,180,212,0.3);display:flex;align-items:center;justify-content:center">
+          <span style="font-size:9px;font-weight:500;letter-spacing:0.06em;text-transform:uppercase;color:rgba(138,180,212,0.4);text-align:center;line-height:1.4">Photo<br>pending</span>
+        </div>
+        <div>
+          <p style="font-family:'Cormorant Garamond',serif;font-weight:600;font-size:20px;letter-spacing:-0.01em;color:#fff;margin-bottom:4px">John Thomas Foxworthy</p>
+          <p style="font-size:11px;font-weight:500;letter-spacing:0.07em;text-transform:uppercase;color:var(--accent);margin-bottom:12px">Founder & CEO · Global Institute of Data Science</p>
+          <p class="t-body-sm">Creator of the A.I.R. Framework™. Author of <em>The Augmented Intelligence Revolution</em> (Fall 2026). M.S. Data Science, Northwestern · B.A. Economics, UCLA.</p>
+          <a href="https://www.linkedin.com/in/john-thomas-foxworthy/" target="_blank" class="t-link" style="margin-top:10px;display:inline-block">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer style="padding:32px 0;border-top:1px solid rgba(255,255,255,0.05);text-align:center">
+  <p style="font-size:11px;color:var(--t3)">© 2026 Global Institute of Data Science · <a href="index.html" style="color:var(--t3);text-decoration:none">gids.co</a></p>
+</footer>
+
+<script>
+const io=new IntersectionObserver(e=>{e.forEach(ev=>{if(ev.isIntersecting){ev.target.classList.add('visible');io.unobserve(ev.target);}});},{threshold:0.1});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>

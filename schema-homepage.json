@@ -1,0 +1,227 @@
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://gids.co/#organization",
+      "name": "Global Institute of Data Science",
+      "alternateName": "GIDS",
+      "url": "https://gids.co",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://gids.co/logo.png"
+      },
+      "sameAs": [
+        "https://www.linkedin.com/in/john-thomas-foxworthy/",
+        "https://gidsco.substack.com"
+      ],
+      "founder": {
+        "@id": "https://gids.co/#person"
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://gids.co/#website",
+      "url": "https://gids.co",
+      "name": "Global Institute of Data Science",
+      "publisher": {
+        "@id": "https://gids.co/#organization"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://gids.co/#webpage",
+      "url": "https://gids.co",
+      "name": "Enterprise AI Feasibility | GIDS by John Thomas Foxworthy",
+      "description": "80% of enterprise AI projects fail before the model is built. GIDS finds the upstream problem first. Request a Feasibility Assessment.",
+      "isPartOf": { "@id": "https://gids.co/#website" },
+      "mainEntity": { "@id": "https://gids.co/#service" },
+      "datePublished": "2026-08-18",
+      "dateModified": "2026-09-09"
+    },
+    {
+      "@type": "Person",
+      "@id": "https://gids.co/#person",
+      "name": "John Thomas Foxworthy",
+      "jobTitle": "Founder and CEO, Global Institute of Data Science",
+      "description": "Most AI consultants started in software. John started in econometrics — where the cost of a wrong model is not a missed deadline. It's a number. Creator of the A.I.R. Framework™, U.S. copyright registered.",
+      "worksFor": { "@id": "https://gids.co/#organization" },
+      "sameAs": [
+        "https://www.linkedin.com/in/john-thomas-foxworthy/",
+        "https://gidsco.substack.com"
+      ],
+      "alumniOf": [
+        {
+          "@type": "EducationalOrganization",
+          "name": "Northwestern University"
+        },
+        {
+          "@type": "EducationalOrganization",
+          "name": "UCLA"
+        }
+      ],
+      "affiliation": [
+        {
+          "@type": "Organization",
+          "name": "UC San Diego Extended Studies"
+        },
+        {
+          "@type": "Organization",
+          "name": "Caltech CTME"
+        }
+      ]
+    },
+    {
+      "@type": "Service",
+      "@id": "https://gids.co/#service",
+      "name": "AI Feasibility Assessment",
+      "description": "A 45-minute diagnostic session to identify the upstream constraint in your AI initiative before any model is selected or budget approved. Output: a board-ready feasibility report.",
+      "provider": { "@id": "https://gids.co/#organization" },
+      "potentialAction": [
+        {
+          "@type": "ReserveAction",
+          "name": "Request a Feasibility Assessment",
+          "target": "https://gids.co/booking"
+        }
+      ]
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://gids.co/#term-air",
+      "name": "A.I.R. Framework™",
+      "description": "A proprietary three-phase methodology for enterprise AI strategy: Assess (Organizational Readiness), Implement (Evidence-Based Deployment), Revolve (Continuous Optimization). Developed by John Thomas Foxworthy. U.S. copyright registered.",
+      "inDefinedTermSet": {
+        "@type": "DefinedTermSet",
+        "name": "GIDS Methodology",
+        "url": "https://gids.co"
+      }
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://gids.co/#term-cognitive-clarity",
+      "name": "Cognitive Clarity",
+      "description": "The state in which an organization knows exactly what its AI should do, why, and how to measure whether it worked. Cognitive Clarity is the outcome the Assess phase exists to create.",
+      "inDefinedTermSet": {
+        "@type": "DefinedTermSet",
+        "name": "GIDS Methodology",
+        "url": "https://gids.co"
+      }
+    },
+    {
+      "@type": "HowTo",
+      "@id": "https://gids.co/#process",
+      "name": "The 5-Step GIDS Feasibility Assessment",
+      "description": "A structured diagnostic that identifies the upstream constraint in an AI initiative before any model is selected or budget approved.",
+      "provider": { "@id": "https://gids.co/#organization" },
+      "step": [
+        {
+          "@type": "HowToStep",
+          "position": 1,
+          "name": "Data Readiness",
+          "text": "Evaluate whether the organization has the data required to support the proposed AI initiative."
+        },
+        {
+          "@type": "HowToStep",
+          "position": 2,
+          "name": "Stakeholder Alignment",
+          "text": "Assess whether all relevant stakeholders agree on what the initiative must produce and who owns the outcome."
+        },
+        {
+          "@type": "HowToStep",
+          "position": 3,
+          "name": "Use Case Clarity",
+          "text": "Determine whether the use case is specific enough to build toward — and whether the right use case has been selected."
+        },
+        {
+          "@type": "HowToStep",
+          "position": 4,
+          "name": "ROI Definition",
+          "text": "Confirm that success criteria are defined in terms the board and CFO can evaluate independently."
+        },
+        {
+          "@type": "HowToStep",
+          "position": 5,
+          "name": "Deployment Risk",
+          "text": "Identify compliance, governance, and operational risks before any build begins."
+        }
+      ]
+    },
+    {
+      "@type": "Event",
+      "@id": "https://gids.co/#event-future-alpha-2026",
+      "name": "AI Strategy and Problem Formulation",
+      "startDate": "2026-01-01",
+      "location": {
+        "@type": "Place",
+        "name": "Future Alpha Conference",
+        "address": "New York City, NY"
+      },
+      "organizer": {
+        "@type": "Organization",
+        "name": "Future Alpha"
+      },
+      "performer": { "@id": "https://gids.co/#person" },
+      "description": "Top 3 most-requested presentation out of 120+ speakers. Audience: quants, portfolio managers, CIOs, and heads of risk at major financial institutions."
+    },
+    {
+      "@type": "Book",
+      "@id": "https://gids.co/#book",
+      "name": "The Augmented Intelligence Revolution",
+      "author": { "@id": "https://gids.co/#person" },
+      "description": "Most organizations treat AI as a technology problem. This book argues it is a reasoning problem. The practitioner's guide to the A.I.R. Framework for executives, board members, and strategists.",
+      "datePublished": "forthcoming Fall 2026",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Global Institute of Data Science"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://gids.co/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "We already have a data science team. Why do we need GIDS?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Your data science team builds models. GIDS determines whether the model should be built at all — and whether the problem it is solving is the right problem. Those are different disciplines. Most failed AI initiatives had a competent data team. What they did not have was someone asking the upstream question before the build started."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "We don't have time for an assessment. Our timeline is locked.",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The average failed enterprise AI initiative takes 18 months and several million dollars before someone asks what a GIDS assessment asks in the first conversation. The assessment does not slow your initiative down. It finds out whether your current timeline is pointed at the right target."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can't we just run a pilot and learn as we go?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "You can. Most organizations do. Then they spend 12 months building something that fails when it meets the real organization — the compliance team that was not in the room, the legacy system that cannot support the output, the three departments that agreed in principle and disagreed in practice. Assess first. Build second."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does the board get at the end of this?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A board-ready feasibility report. It states clearly what your organization is ready to build, what it is not ready to build, and what must happen before any build begins. It is written in plain language. The board can read it. The CFO can read it. The General Counsel can read it."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What if we're not sure our situation qualifies?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Request the assessment. John reviews your situation before the call and will tell you whether GIDS is the right fit. If it is not, he will tell you what is. There is no cost to finding out. There is often a significant cost to not finding out."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>

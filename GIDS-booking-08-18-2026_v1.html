@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Request a Feasibility Assessment · GIDS</title>
+<meta name="description" content="The first conversation is a diagnosis, not a pitch. John reviews your situation before the call. Request your AI Feasibility Assessment with GIDS."/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet"/>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',sans-serif;font-weight:300;background:#000;color:#fff;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+:root{--accent:#8AB4D4;--gold:#C9A84C;--border:rgba(255,255,255,0.08);--t2:rgba(255,255,255,0.62);--t3:rgba(255,255,255,0.32)}
+.container{max-width:1100px;margin:0 auto;padding:0 64px}
+@media(max-width:768px){.container{padding:0 24px}}
+.glass{background:rgba(0,0,0,0.44);backdrop-filter:blur(5px);-webkit-backdrop-filter:blur(5px);position:relative;overflow:hidden}
+.glass::before{content:'';position:absolute;inset:0;border-radius:inherit;padding:1.4px;background:linear-gradient(180deg,rgba(255,255,255,0.22) 0%,rgba(255,255,255,0.06) 22%,transparent 44%,transparent 56%,rgba(255,255,255,0.06) 78%,rgba(255,255,255,0.22) 100%);-webkit-mask:linear-gradient(#fff 0 0) content-box,linear-gradient(#fff 0 0);-webkit-mask-composite:xor;mask-composite:exclude;pointer-events:none}
+.t-display{font-family:'Cormorant Garamond',serif;font-weight:600;letter-spacing:-0.03em;line-height:1.05}
+.t-heading{font-family:'Cormorant Garamond',serif;font-weight:400;letter-spacing:-0.02em;line-height:1.1}
+.t-eyebrow{font-size:11px;font-weight:500;letter-spacing:0.15em;text-transform:uppercase;color:var(--t3)}
+.t-body{font-size:15px;line-height:1.72;color:var(--t2)}
+.t-body-sm{font-size:13px;line-height:1.65;color:var(--t3)}
+.navbar-wrap{position:fixed;top:0;left:0;right:0;z-index:100;padding:20px 64px 0}
+@media(max-width:768px){.navbar-wrap{padding:16px 24px 0}}
+.navbar{display:flex;align-items:center;justify-content:space-between;border-radius:12px;padding:10px 18px;border:1px solid var(--border)}
+.nav-logo{font-family:'Cormorant Garamond',serif;font-weight:600;font-size:18px;letter-spacing:-0.02em;color:#fff;text-decoration:none}
+.nav-back{font-size:13px;color:var(--t2);text-decoration:none;transition:color .2s}
+.nav-back:hover{color:#fff}
+.reveal{opacity:0;transform:translateY(20px);transition:opacity .65s ease,transform .65s ease}
+.reveal.visible{opacity:1;transform:translateY(0)}
+.reveal-delay-1{transition-delay:.08s}
+.reveal-delay-2{transition-delay:.16s}
+.reveal-delay-3{transition-delay:.24s}
+.divider{height:1px;background:rgba(255,255,255,0.05);margin:0 64px}
+@media(max-width:768px){.divider{margin:0 24px}}
+.section{padding:80px 0}
+.section-inner{border-radius:4px;padding:56px 52px}
+@media(max-width:768px){.section-inner{padding:32px 20px}}
+/* MAIN LAYOUT */
+.booking-layout{display:grid;grid-template-columns:1fr 1.4fr;gap:48px;align-items:start}
+@media(max-width:900px){.booking-layout{grid-template-columns:1fr}}
+/* WHAT HAPPENS */
+.step-list{margin-top:32px;display:flex;flex-direction:column;gap:2px}
+.step-item{display:grid;grid-template-columns:32px 1fr;gap:16px;padding:24px 20px;border:1px solid var(--border);border-radius:2px;align-items:start}
+.step-num{font-family:'Cormorant Garamond',serif;font-weight:600;font-size:24px;color:var(--accent);letter-spacing:-0.02em;line-height:1}
+.step-title{font-size:14px;font-weight:500;color:#fff;margin-bottom:4px;letter-spacing:-0.01em}
+/* CALENDLY PLACEHOLDER */
+.calendly-block{border:1px solid rgba(138,180,212,0.18);border-radius:4px;overflow:hidden;min-height:560px;display:flex;flex-direction:column}
+.calendly-placeholder{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:48px;text-align:center;gap:14px}
+/* WHO THIS IS FOR */
+.fit-grid{display:grid;grid-template-columns:1fr 1fr;gap:2px;margin-top:32px}
+@media(max-width:768px){.fit-grid{grid-template-columns:1fr}}
+.fit-card{padding:28px 24px;border:1px solid var(--border);border-radius:2px}
+.fit-label{font-size:10px;font-weight:500;letter-spacing:0.12em;text-transform:uppercase;margin-bottom:10px}
+.fit-label.yes{color:var(--accent)}
+.fit-label.no{color:rgba(138,180,212,0.45)}
+.icon-row{display:flex;align-items:flex-start;gap:10px;margin-bottom:10px}
+.icon-row:last-child{margin-bottom:0}
+</style>
+</head>
+<body>
+
+<div class="navbar-wrap">
+  <nav class="navbar glass">
+    <a class="nav-logo" href="index.html">GIDS</a>
+    <a class="nav-back" href="index.html">← Back to main site</a>
+  </nav>
+</div>
+
+<!-- HERO -->
+<section style="min-height:44vh;display:flex;flex-direction:column;justify-content:flex-end;padding-bottom:64px;padding-top:120px">
+  <div class="container">
+    <p class="t-eyebrow reveal" style="margin-bottom:20px">Request a Feasibility Assessment</p>
+    <h1 class="t-display reveal reveal-delay-1" style="font-size:clamp(36px,4.8vw,68px);max-width:720px;margin-bottom:20px">The first conversation is a diagnosis, not a pitch.</h1>
+    <p class="t-body reveal reveal-delay-2" style="max-width:520px">John reviews your situation before the call. If GIDS is not the right fit, he will tell you what is. There is no cost to finding out.</p>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- BOOKING + WHAT HAPPENS -->
+<section class="section">
+  <div class="container">
+    <div class="booking-layout">
+
+      <!-- LEFT: What happens -->
+      <div>
+        <div class="section-inner glass" style="padding:40px 36px">
+          <p class="t-eyebrow reveal" style="margin-bottom:20px">What happens on the call</p>
+          <h2 class="t-heading reveal reveal-delay-1" style="font-size:clamp(22px,2.2vw,30px);margin-bottom:8px">A 45-minute diagnostic session.</h2>
+          <p class="t-body reveal reveal-delay-1" style="margin-bottom:0">Not a sales call. John will ask you to describe your AI initiative in one sentence. From there, the conversation is a structured diagnosis.</p>
+
+          <div class="step-list reveal reveal-delay-2">
+            <div class="step-item glass">
+              <div class="step-num">1</div>
+              <div>
+                <p class="step-title">You describe the initiative</p>
+                <p class="t-body-sm">One sentence. John listens for what is and isn't there.</p>
+              </div>
+            </div>
+            <div class="step-item glass">
+              <div class="step-num">2</div>
+              <div>
+                <p class="step-title">GIDS identifies the upstream constraint</p>
+                <p class="t-body-sm">Is this a data readiness problem, a stakeholder alignment problem, a use-case clarity problem, an ROI definition problem, or a formulation problem?</p>
+              </div>
+            </div>
+            <div class="step-item glass">
+              <div class="step-num">3</div>
+              <div>
+                <p class="step-title">You receive a clear next step</p>
+                <p class="t-body-sm">If GIDS is the right fit, John will tell you what a full engagement looks like. If not, he will tell you what is.</p>
+              </div>
+            </div>
+          </div>
+
+          <blockquote style="margin-top:32px;padding:24px 28px;border:1px solid rgba(138,180,212,0.15);border-radius:2px" class="reveal reveal-delay-2">
+            <p style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:17px;color:rgba(255,255,255,0.75);line-height:1.6">
+              "If you can't describe your AI initiative in one sentence a smart, non-technical colleague would push back on — you are not ready to build."
+            </p>
+            <p class="t-body-sm" style="margin-top:10px">— John Thomas Foxworthy</p>
+          </blockquote>
+        </div>
+      </div>
+
+      <!-- RIGHT: Calendly embed -->
+      <div class="reveal reveal-delay-1">
+        <div class="calendly-block glass">
+          <!-- ══ PASTE CALENDLY INLINE EMBED CODE HERE ══
+               From Calendly: Share → Add to website → Inline Embed → Copy code
+               Replace this entire placeholder block with the Calendly script + div -->
+          <div class="calendly-placeholder">
+            <svg width="48" height="48" viewBox="0 0 48 48" fill="none"><rect x="6" y="8" width="36" height="34" rx="3" stroke="rgba(138,180,212,0.3)" stroke-width="1.5"/><path d="M6 18H42" stroke="rgba(138,180,212,0.3)" stroke-width="1.5"/><path d="M16 6V12M32 6V12" stroke="rgba(138,180,212,0.3)" stroke-width="1.5" stroke-linecap="round"/><rect x="14" y="24" width="6" height="5" rx="1" fill="rgba(138,180,212,0.2)"/><rect x="24" y="24" width="6" height="5" rx="1" fill="rgba(138,180,212,0.2)"/></svg>
+            <p style="font-size:10px;font-weight:500;letter-spacing:0.12em;text-transform:uppercase;color:rgba(138,180,212,0.45)">⚠ Calendly embed pending</p>
+            <p class="t-body-sm" style="text-align:center;max-width:260px">John to send Calendly embed code.<br>Paste it here to replace this block.</p>
+          </div>
+          <!-- ══ END CALENDLY BLOCK ══ -->
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- WHO THIS IS FOR -->
+<section class="section">
+  <div class="container">
+    <div class="section-inner glass">
+      <p class="t-eyebrow reveal" style="margin-bottom:20px">Right fit / Wrong fit</p>
+      <h2 class="t-heading reveal reveal-delay-1" style="font-size:clamp(24px,2.5vw,36px);margin-bottom:12px">This assessment is not for everyone.</h2>
+      <p class="t-body reveal reveal-delay-1" style="max-width:580px;margin-bottom:0">GIDS works with a small number of organizations at a time. The first call determines whether the fit is real.</p>
+
+      <div class="fit-grid reveal reveal-delay-2">
+        <div class="fit-card glass">
+          <p class="fit-label yes">Right fit</p>
+          <div class="icon-row">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" style="flex-shrink:0;margin-top:2px"><circle cx="8" cy="8" r="7" stroke="#8AB4D4" stroke-width="1.2"/><path d="M4.5 8.2L7 10.5L11.5 5.5" stroke="#8AB4D4" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <p class="t-body-sm">You have an AI initiative approved or under consideration and cannot yet state precisely what problem it solves</p>
+          </div>
+          <div class="icon-row">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" style="flex-shrink:0;margin-top:2px"><circle cx="8" cy="8" r="7" stroke="#8AB4D4" stroke-width="1.2"/><path d="M4.5 8.2L7 10.5L11.5 5.5" stroke="#8AB4D4" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <p class="t-body-sm">A board, CFO, or General Counsel will eventually ask whether this initiative was worth it</p>
+          </div>
+          <div class="icon-row">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" style="flex-shrink:0;margin-top:2px"><circle cx="8" cy="8" r="7" stroke="#8AB4D4" stroke-width="1.2"/><path d="M4.5 8.2L7 10.5L11.5 5.5" stroke="#8AB4D4" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <p class="t-body-sm">A prior AI initiative failed or stalled and you want to understand why before starting the next one</p>
+          </div>
+          <div class="icon-row">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" style="flex-shrink:0;margin-top:2px"><circle cx="8" cy="8" r="7" stroke="#8AB4D4" stroke-width="1.2"/><path d="M4.5 8.2L7 10.5L11.5 5.5" stroke="#8AB4D4" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <p class="t-body-sm">You are a CIO, CFO, or strategy lead at a company with real budget and real stakes</p>
+          </div>
+        </div>
+        <div class="fit-card glass">
+          <p class="fit-label no">Wrong fit</p>
+          <div class="icon-row">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" style="flex-shrink:0;margin-top:2px"><circle cx="8" cy="8" r="7" stroke="rgba(138,180,212,0.5)" stroke-width="1.2"/><path d="M5.5 5.5L10.5 10.5M10.5 5.5L5.5 10.5" stroke="rgba(138,180,212,0.6)" stroke-width="1.4" stroke-linecap="round"/></svg>
+            <p class="t-body-sm">You need someone to validate a decision already made</p>
+          </div>
+          <div class="icon-row">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" style="flex-shrink:0;margin-top:2px"><circle cx="8" cy="8" r="7" stroke="rgba(138,180,212,0.5)" stroke-width="1.2"/><path d="M5.5 5.5L10.5 10.5M10.5 5.5L5.5 10.5" stroke="rgba(138,180,212,0.6)" stroke-width="1.4" stroke-linecap="round"/></svg>
+            <p class="t-body-sm">You are looking for a vendor to build or manage AI systems</p>
+          </div>
+          <div class="icon-row">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" style="flex-shrink:0;margin-top:2px"><circle cx="8" cy="8" r="7" stroke="rgba(138,180,212,0.5)" stroke-width="1.2"/><path d="M5.5 5.5L10.5 10.5M10.5 5.5L5.5 10.5" stroke="rgba(138,180,212,0.6)" stroke-width="1.4" stroke-linecap="round"/></svg>
+            <p class="t-body-sm">You need a framework delivered as a presentation deck rather than an actionable diagnostic</p>
+          </div>
+          <div class="icon-row">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" style="flex-shrink:0;margin-top:2px"><circle cx="8" cy="8" r="7" stroke="rgba(138,180,212,0.5)" stroke-width="1.2"/><path d="M5.5 5.5L10.5 10.5M10.5 5.5L5.5 10.5" stroke="rgba(138,180,212,0.6)" stroke-width="1.4" stroke-linecap="round"/></svg>
+            <p class="t-body-sm">You are at early-stage exploring AI generally with no specific initiative in progress</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer style="padding:32px 0;border-top:1px solid rgba(255,255,255,0.05);text-align:center">
+  <p style="font-size:11px;color:var(--t3)">© 2026 Global Institute of Data Science · <a href="index.html" style="color:var(--t3);text-decoration:none">gids.co</a></p>
+</footer>
+
+<script>
+const io=new IntersectionObserver(e=>{e.forEach(ev=>{if(ev.isIntersecting){ev.target.classList.add('visible');io.unobserve(ev.target);}});},{threshold:0.1});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>

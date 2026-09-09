@@ -1,0 +1,32 @@
+# Global Institute of Data Science
+
+Enterprise AI advisory firm specializing in feasibility assessment and problem formulation before organizations build or approve AI initiatives. Founded by John Thomas Foxworthy. Creator of the A.I.R. Framework™ (Assess, Implement, Revolve), U.S. copyright registered.
+
+## Core Pages
+
+- https://gids.co: Homepage — the upstream AI problem, the A.I.R. Framework, case studies, engagement model, and the primary CTA (Request a Feasibility Assessment)
+- https://gids.co/booking: Feasibility Assessment booking — what happens on the call, right/wrong fit criteria, Calendly scheduling embed
+
+## About the Founder
+
+- https://gids.co/speaking: John Thomas Foxworthy — speaking history (Future Alpha 2026, Carnegie Mellon 2026), teaching credentials (UC San Diego Extended Studies, Caltech CTME), and speaking inquiry information
+
+## Methodology
+
+- https://gids.co: The A.I.R. Framework™ — Assess (Organizational Readiness), Implement (Evidence-Based Deployment), Revolve (Continuous Optimization). Central concept: Cognitive Clarity. The 5-Step GIDS Feasibility Assessment lives inside the Assess phase.
+
+## Proof & Case Studies
+
+- https://gids.co/cases: Case study library — four detailed advisory cases across insurance, investment banking, digital marketing, and global retail. Each case documents the upstream constraint, what GIDS found, and what changed.
+
+## Content & Insights
+
+- https://gidsco.substack.com: Substack newsletter — ongoing case studies, AI strategy insights, and A.I.R. Framework application examples
+
+## Book
+
+- https://gids.co/book: The Augmented Intelligence Revolution by John Thomas Foxworthy — forthcoming Fall 2026. The practitioner's guide to the A.I.R. Framework for executives, board members, and strategists.
+
+## Legal
+
+- https://gids.co/legal: Privacy Policy and Terms & Conditions
