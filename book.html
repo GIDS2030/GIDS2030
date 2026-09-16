@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>The Augmented Intelligence Revolution · John Thomas Foxworthy</title>
+<meta name="description" content="Most organizations treat AI as a technology problem. This book argues it is a reasoning problem. The practitioner's guide to the A.I.R. Framework. Fall 2026."/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet"/>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',sans-serif;font-weight:300;background:#000;color:#fff;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+:root{--accent:#8AB4D4;--gold:#C9A84C;--border:rgba(255,255,255,0.08);--t2:rgba(255,255,255,0.62);--t3:rgba(255,255,255,0.32)}
+.container{max-width:1000px;margin:0 auto;padding:0 64px}
+@media(max-width:768px){.container{padding:0 24px}}
+.glass{background:rgba(0,0,0,0.44);backdrop-filter:blur(5px);-webkit-backdrop-filter:blur(5px);position:relative;overflow:hidden}
+.glass::before{content:'';position:absolute;inset:0;border-radius:inherit;padding:1.4px;background:linear-gradient(180deg,rgba(255,255,255,0.22) 0%,rgba(255,255,255,0.06) 22%,transparent 44%,transparent 56%,rgba(255,255,255,0.06) 78%,rgba(255,255,255,0.22) 100%);-webkit-mask:linear-gradient(#fff 0 0) content-box,linear-gradient(#fff 0 0);-webkit-mask-composite:xor;mask-composite:exclude;pointer-events:none}
+.t-display{font-family:'Cormorant Garamond',serif;font-weight:600;letter-spacing:-0.03em;line-height:1.05}
+.t-heading{font-family:'Cormorant Garamond',serif;font-weight:400;letter-spacing:-0.02em;line-height:1.1}
+.t-eyebrow{font-size:11px;font-weight:500;letter-spacing:0.15em;text-transform:uppercase;color:var(--t3)}
+.t-body{font-size:15px;line-height:1.72;color:var(--t2)}
+.t-body-sm{font-size:13px;line-height:1.65;color:var(--t3)}
+.btn{display:inline-block;background:var(--gold);color:#000;border:none;cursor:pointer;font-family:'Inter',sans-serif;font-weight:500;font-size:13px;border-radius:8px;padding:14px 32px;text-decoration:none;transition:background .2s}
+.btn:hover{background:#b8922e}
+.navbar-wrap{position:fixed;top:0;left:0;right:0;z-index:100;padding:20px 64px 0}
+@media(max-width:768px){.navbar-wrap{padding:16px 24px 0}}
+.navbar{display:flex;align-items:center;justify-content:space-between;border-radius:12px;padding:10px 18px;border:1px solid var(--border)}
+.nav-logo{font-family:'Cormorant Garamond',serif;font-weight:600;font-size:18px;letter-spacing:-0.02em;color:#fff;text-decoration:none}
+.nav-back{font-size:13px;color:var(--t2);text-decoration:none;transition:color .2s}
+.nav-back:hover{color:#fff}
+.reveal{opacity:0;transform:translateY(20px);transition:opacity .65s ease,transform .65s ease}
+.reveal.visible{opacity:1;transform:translateY(0)}
+.reveal-delay-1{transition-delay:.08s}
+.reveal-delay-2{transition-delay:.16s}
+.reveal-delay-3{transition-delay:.24s}
+.divider{height:1px;background:rgba(255,255,255,0.05);margin:0 64px}
+@media(max-width:768px){.divider{margin:0 24px}}
+.section{padding:80px 0}
+.section-inner{border-radius:4px;padding:56px 52px}
+@media(max-width:768px){.section-inner{padding:32px 20px}}
+/* HERO — centered book launch */
+.book-hero{min-height:90vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:120px 0 80px}
+.book-tag{display:inline-block;font-size:10px;font-weight:500;letter-spacing:0.14em;text-transform:uppercase;color:var(--accent);border:1px solid rgba(138,180,212,0.28);border-radius:20px;padding:6px 16px;margin-bottom:32px}
+.book-title{font-family:'Cormorant Garamond',serif;font-weight:600;font-size:clamp(36px,5.5vw,80px);letter-spacing:-0.03em;line-height:1.02;margin-bottom:24px;max-width:800px}
+.book-subtitle{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:clamp(16px,1.8vw,24px);color:rgba(255,255,255,0.6);margin-bottom:40px;max-width:580px;line-height:1.5}
+/* WAITLIST FORM AREA */
+.waitlist-block{max-width:480px;margin:0 auto;padding:40px;border:1px solid rgba(138,180,212,0.18);border-radius:4px;background:rgba(0,0,0,0.5)}
+.waitlist-placeholder{padding:36px;border:1px dashed rgba(138,180,212,0.18);border-radius:4px;text-align:center}
+/* WHAT IT'S ABOUT */
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:2px;margin-top:40px}
+@media(max-width:768px){.about-grid{grid-template-columns:1fr}}
+.about-card{padding:32px 28px;border:1px solid var(--border);border-radius:2px}
+.about-label{font-size:10px;font-weight:500;letter-spacing:0.12em;text-transform:uppercase;color:var(--accent);margin-bottom:12px}
+.about-text{font-family:'Cormorant Garamond',serif;font-size:18px;font-weight:400;color:#fff;line-height:1.45;letter-spacing:-0.01em}
+</style>
+</head>
+<body>
+
+<div class="navbar-wrap">
+  <nav class="navbar glass">
+    <a class="nav-logo" href="index.html">GIDS</a>
+    <a class="nav-back" href="index.html">← Back to main site</a>
+  </nav>
+</div>
+
+<!-- HERO -->
+<section class="book-hero">
+  <div class="container" style="display:flex;flex-direction:column;align-items:center">
+    <div class="book-tag reveal">Forthcoming · Fall 2026</div>
+    <h1 class="book-title reveal reveal-delay-1">The Augmented Intelligence Revolution</h1>
+    <p class="book-subtitle reveal reveal-delay-2">John Thomas Foxworthy</p>
+
+    <p class="t-body reveal reveal-delay-2" style="max-width:600px;text-align:center;margin-bottom:48px">
+      Most organizations treat AI as a technology problem. This book argues it is a reasoning problem — and that the failure happens upstream, before any model is selected or any line of code is written.
+    </p>
+
+    <!-- WAITLIST EMBED — pending ConvertKit/Kit URL from John -->
+    <div class="waitlist-placeholder reveal reveal-delay-3">
+      <p style="font-size:10px;font-weight:500;letter-spacing:0.12em;text-transform:uppercase;color:rgba(138,180,212,0.45);margin-bottom:12px">⚠ Waitlist embed pending</p>
+      <p class="t-body-sm" style="margin-bottom:16px">John to send ConvertKit/Kit embed URL.<br>This block becomes the email signup form.</p>
+      <!-- PASTE CONVERTKIT EMBED CODE HERE -->
+      <!-- Example: <script async data-uid="xxxxx" src="https://...kit.com/xxxxx/index.js"></script> -->
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- WHAT THE BOOK IS -->
+<section class="section">
+  <div class="container">
+    <div class="section-inner glass">
+      <p class="t-eyebrow reveal" style="margin-bottom:20px">About the Book</p>
+      <h2 class="t-heading reveal reveal-delay-1" style="font-size:clamp(26px,2.8vw,40px);max-width:640px;margin-bottom:20px">A reasoning problem disguised as a technology problem.</h2>
+      <p class="t-body reveal reveal-delay-1" style="max-width:680px;margin-bottom:0">The Augmented Intelligence Revolution is written for executives, board members, and strategists who need to ask better questions before they approve the next initiative. It is the practitioner's guide to the A.I.R. Framework™, grounded in more than a decade of applied machine-learning consulting across industries.</p>
+
+      <div class="about-grid reveal reveal-delay-2">
+        <div class="about-card glass">
+          <p class="about-label">The argument</p>
+          <p class="about-text">Failure happens before any model is selected. The upstream question is never asked. This book gives you the frame to ask it.</p>
+        </div>
+        <div class="about-card glass">
+          <p class="about-label">Who it's for</p>
+          <p class="about-text">Executives, board members, and strategists who approve AI initiatives — and the advisors who brief them.</p>
+        </div>
+        <div class="about-card glass">
+          <p class="about-label">The framework</p>
+          <p class="about-text">The A.I.R. Framework™ — Assess, Implement, Revolve — applied at book length, with real cases and diagnostic tools.</p>
+        </div>
+        <div class="about-card glass">
+          <p class="about-label">The standard</p>
+          <p class="about-text">Can you describe your AI initiative in one sentence a smart, non-technical colleague would push back on? If not, you are not ready to build.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- AUTHOR -->
+<section class="section">
+  <div class="container">
+    <div class="section-inner glass" style="display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center">
+      <div>
+        <p class="t-eyebrow reveal" style="margin-bottom:20px">The Author</p>
+        <h2 class="t-heading reveal reveal-delay-1" style="font-size:clamp(24px,2.5vw,36px);margin-bottom:20px">John Thomas Foxworthy</h2>
+        <p class="t-body reveal reveal-delay-2" style="margin-bottom:16px">Most AI consultants started in software. John started in econometrics — where the cost of a wrong model is not a missed deadline. It's a number.</p>
+        <p class="t-body reveal reveal-delay-2" style="margin-bottom:16px">That discipline became a decade of applied machine-learning consulting, then three years teaching computer vision and deep learning, and ultimately an AI-governance and model-evaluation practice built for the organizations where it matters most.</p>
+        <p class="t-body-sm reveal reveal-delay-2">Creator of the A.I.R. Framework™, U.S. copyright registered.<br>M.S. Data Science, Northwestern · B.A. Economics, UCLA</p>
+        <a href="https://www.linkedin.com/in/john-thomas-foxworthy/" target="_blank" style="display:inline-block;margin-top:16px;color:var(--accent);font-size:13px;font-weight:500;text-decoration:none;border-bottom:1px solid rgba(138,180,212,0.3);padding-bottom:1px" class="reveal reveal-delay-2">LinkedIn</a>
+      </div>
+      <div class="reveal reveal-delay-2" style="display:flex;justify-content:center">
+        <div style="width:180px;height:180px;border-radius:50%;border:1px dashed rgba(138,180,212,0.3);background:rgba(138,180,212,0.04);display:flex;align-items:center;justify-content:center">
+          <span style="font-size:9px;font-weight:500;letter-spacing:0.08em;text-transform:uppercase;color:rgba(138,180,212,0.35);text-align:center;line-height:1.5">Headshot<br>placeholder</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer style="padding:32px 0;border-top:1px solid rgba(255,255,255,0.05);text-align:center">
+  <p style="font-size:11px;color:var(--t3)">© 2026 Global Institute of Data Science · <a href="index.html" style="color:var(--t3);text-decoration:none">gids.co</a></p>
+</footer>
+
+<script>
+const io=new IntersectionObserver(e=>{e.forEach(ev=>{if(ev.isIntersecting){ev.target.classList.add('visible');io.unobserve(ev.target);}});},{threshold:0.1});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Case Studies · GIDS</title>
+<meta name="description" content="What changes when the upstream AI problem is solved first. Case studies from GIDS advisory engagements across insurance, investment banking, retail, and digital marketing."/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet"/>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',sans-serif;font-weight:300;background:#000;color:#fff;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+:root{--accent:#8AB4D4;--gold:#C9A84C;--border:rgba(255,255,255,0.08);--t2:rgba(255,255,255,0.62);--t3:rgba(255,255,255,0.32)}
+.container{max-width:1100px;margin:0 auto;padding:0 64px}
+@media(max-width:768px){.container{padding:0 24px}}
+.glass{background:rgba(0,0,0,0.44);backdrop-filter:blur(5px);-webkit-backdrop-filter:blur(5px);position:relative;overflow:hidden}
+.glass::before{content:'';position:absolute;inset:0;border-radius:inherit;padding:1.4px;background:linear-gradient(180deg,rgba(255,255,255,0.22) 0%,rgba(255,255,255,0.06) 22%,transparent 44%,transparent 56%,rgba(255,255,255,0.06) 78%,rgba(255,255,255,0.22) 100%);-webkit-mask:linear-gradient(#fff 0 0) content-box,linear-gradient(#fff 0 0);-webkit-mask-composite:xor;mask-composite:exclude;pointer-events:none}
+.t-display{font-family:'Cormorant Garamond',serif;font-weight:600;letter-spacing:-0.03em;line-height:1.05}
+.t-heading{font-family:'Cormorant Garamond',serif;font-weight:400;letter-spacing:-0.02em;line-height:1.1}
+.t-eyebrow{font-size:11px;font-weight:500;letter-spacing:0.15em;text-transform:uppercase;color:var(--t3)}
+.t-body{font-size:15px;line-height:1.72;color:var(--t2)}
+.t-body-sm{font-size:13px;line-height:1.65;color:var(--t3)}
+.btn{display:inline-block;background:var(--gold);color:#000;border:none;cursor:pointer;font-family:'Inter',sans-serif;font-weight:500;font-size:13px;border-radius:8px;padding:12px 28px;text-decoration:none;transition:background .2s}
+.btn:hover{background:#b8922e}
+.navbar-wrap{position:fixed;top:0;left:0;right:0;z-index:100;padding:20px 64px 0}
+@media(max-width:768px){.navbar-wrap{padding:16px 24px 0}}
+.navbar{display:flex;align-items:center;justify-content:space-between;border-radius:12px;padding:10px 18px;border:1px solid var(--border)}
+.nav-logo{font-family:'Cormorant Garamond',serif;font-weight:600;font-size:18px;letter-spacing:-0.02em;color:#fff;text-decoration:none}
+.nav-back{font-size:13px;color:var(--t2);text-decoration:none;transition:color .2s}
+.nav-back:hover{color:#fff}
+.reveal{opacity:0;transform:translateY(20px);transition:opacity .65s ease,transform .65s ease}
+.reveal.visible{opacity:1;transform:translateY(0)}
+.reveal-delay-1{transition-delay:.08s}
+.reveal-delay-2{transition-delay:.16s}
+.reveal-delay-3{transition-delay:.24s}
+.divider{height:1px;background:rgba(255,255,255,0.05);margin:0 64px}
+@media(max-width:768px){.divider{margin:0 24px}}
+.section{padding:80px 0}
+.section-inner{border-radius:4px;padding:56px 52px}
+@media(max-width:768px){.section-inner{padding:32px 20px}}
+/* CASE CARDS */
+.case-full{margin-bottom:2px;padding:48px 48px;border:1px solid var(--border);border-radius:2px;display:grid;grid-template-columns:200px 1fr;gap:48px;transition:border-color .3s}
+.case-full:hover{border-color:rgba(255,255,255,0.16)}
+@media(max-width:900px){.case-full{grid-template-columns:1fr;gap:24px;padding:32px 24px}}
+.case-meta{}
+.case-number{font-family:'Cormorant Garamond',serif;font-weight:600;font-size:56px;letter-spacing:-0.04em;color:rgba(255,255,255,0.08);line-height:1;margin-bottom:16px}
+.case-badge{font-size:9px;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;color:var(--accent);margin-bottom:8px;display:block}
+.case-industry{font-size:11px;font-weight:500;letter-spacing:0.06em;text-transform:uppercase;color:var(--t3);line-height:1.5}
+.case-body{}
+.case-finding{font-family:'Cormorant Garamond',serif;font-size:clamp(20px,2.2vw,28px);font-weight:600;letter-spacing:-0.02em;color:#fff;line-height:1.25;margin-bottom:24px}
+.case-label{font-size:10px;font-weight:500;letter-spacing:0.12em;text-transform:uppercase;color:var(--accent);margin-bottom:8px;margin-top:20px}
+.case-outcome-block{margin-top:24px;padding:20px 24px;border:1px solid rgba(138,180,212,0.18);border-radius:2px;background:rgba(138,180,212,0.04)}
+.case-outcome-label{font-size:10px;font-weight:500;letter-spacing:0.12em;text-transform:uppercase;color:var(--accent);margin-bottom:8px}
+.pending-tag{display:inline-block;font-size:9px;font-weight:500;letter-spacing:0.08em;text-transform:uppercase;background:rgba(255,180,0,0.08);color:rgba(255,180,0,0.6);border:1px solid rgba(255,180,0,0.18);border-radius:4px;padding:3px 10px}
+/* ROTATING NOTE */
+.rotating-note{font-size:10px;font-weight:500;letter-spacing:0.08em;text-transform:uppercase;color:var(--t3);display:flex;align-items:center;gap:6px}
+</style>
+</head>
+<body>
+
+<div class="navbar-wrap">
+  <nav class="navbar glass">
+    <a class="nav-logo" href="index.html">GIDS</a>
+    <a class="nav-back" href="index.html">← Back to main site</a>
+    <a href="GIDS-booking-08-18-2026_v1.html" class="btn" style="padding:8px 18px;font-size:12px">Request an Assessment</a>
+  </nav>
+</div>
+
+<!-- HERO -->
+<section style="min-height:42vh;display:flex;flex-direction:column;justify-content:flex-end;padding-bottom:64px;padding-top:120px">
+  <div class="container">
+    <p class="t-eyebrow reveal" style="margin-bottom:20px">Case Studies</p>
+    <h1 class="t-display reveal reveal-delay-1" style="font-size:clamp(36px,4.8vw,68px);max-width:760px;margin-bottom:20px">What changes when the upstream problem is solved first.</h1>
+    <p class="t-body reveal reveal-delay-2" style="max-width:540px">Every case below began with a plan that would have failed. The constraint was upstream — in the problem formulation, not the model.</p>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- CASES -->
+<section class="section">
+  <div class="container">
+
+    <!-- Case 1 -->
+    <div class="case-full glass reveal">
+      <div class="case-meta">
+        <div class="case-number">01</div>
+        <span class="case-badge">Pinned</span>
+        <p class="case-industry">Insurance<br>Enterprise · Very Large</p>
+      </div>
+      <div class="case-body">
+        <p class="case-finding">Wrong model class selected — the prior failure was not a data or talent failure. It was a model-selection problem.</p>
+        <p class="case-label">The Situation</p>
+        <p class="t-body">C-suite plan to roll out sales forecasting across all subsidiaries. An earlier forecasting effort had already failed in production. The organization attributed the failure to data quality and brought in a new team.</p>
+        <p class="case-label">What GIDS Found</p>
+        <p class="t-body">A model-selection problem. The prior failure had nothing to do with data quality or team capability. The wrong model class had been chosen for the forecasting problem itself — a fundamental mismatch between the problem structure and the modeling approach.</p>
+        <p class="case-label">What Changed</p>
+        <p class="t-body">The initiative was re-grounded on deep learning time-series modeling chosen to fit the actual problem structure, then rolled out to subsidiaries with the correct architecture in place.</p>
+        <div class="case-outcome-block">
+          <p class="case-outcome-label">Outcome</p>
+          <!-- JT_OUTCOME_1: Replace this block with outcome figures from John -->
+          <span class="pending-tag">⚠ JT_OUTCOME_1 — Accuracy figure / subsidiaries live — pending from John</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Case 2 -->
+    <div class="case-full glass reveal reveal-delay-1">
+      <div class="case-meta">
+        <div class="case-number">02</div>
+        <span class="case-badge">Pinned</span>
+        <p class="case-industry">Investment Banking<br>Global</p>
+      </div>
+      <div class="case-body">
+        <p class="case-finding">Structured data only — an oversimplification that left a direct P&L insight source completely untouched.</p>
+        <p class="case-label">The Situation</p>
+        <p class="t-body">The organization treated AI as applicable to structured data only and resisted going further. Leadership believed unstructured sources were too complex and too speculative to justify.</p>
+        <p class="case-label">What GIDS Found</p>
+        <p class="t-body">An oversimplification. The data science of data transformations could open systematic insight from trader user files — tied directly to the department's profit and loss. The data existed. The methodology existed. The connection had never been made.</p>
+        <p class="case-label">What Changed</p>
+        <p class="t-body">User-file data was transformed and evaluated against the department P&L, turning an untouched data source into a live decision input.</p>
+        <div class="case-outcome-block">
+          <p class="case-outcome-label">Outcome</p>
+          <!-- JT_OUTCOME_2: Replace this block with outcome figures from John -->
+          <span class="pending-tag">⚠ JT_OUTCOME_2 — Insight adopted / P&L linkage result — pending from John</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Case 3 — Rotating slot -->
+    <div class="case-full glass reveal reveal-delay-2">
+      <div class="case-meta">
+        <div class="case-number">03</div>
+        <span class="case-badge" style="color:var(--t3)">Rotating</span>
+        <p class="case-industry">Digital Marketing<br>Mid-Market</p>
+        <p class="rotating-note" style="margin-top:16px">
+          <svg width="10" height="10" viewBox="0 0 10 10" fill="none"><circle cx="5" cy="5" r="4" stroke="rgba(255,255,255,0.25)" stroke-width="1"/><path d="M5 2.5V5L6.5 6.5" stroke="rgba(255,255,255,0.25)" stroke-width="1" stroke-linecap="round"/></svg>
+          Updates weekly
+        </p>
+      </div>
+      <div class="case-body">
+        <p class="case-finding">"We told a client to spend less on AI." A right-sizing problem — a leaner solution was the better strategy.</p>
+        <p class="case-label">The Situation</p>
+        <p class="t-body">The company was about to invest in an expensive LLM solution for campaign recommendations. The vendor had been selected. The contract was being reviewed.</p>
+        <p class="case-label">What GIDS Found</p>
+        <p class="t-body">A right-sizing problem. The LLM solution was technically capable but fundamentally over-engineered for the actual recommendation task. A simpler, cheaper alternative would produce better results for this specific use case — and would be maintainable by the existing team.</p>
+        <p class="case-label">What Changed</p>
+        <p class="t-body">The organization pivoted to a leaner agentic recommendation engine for marketing campaigns. The vendor contract was not signed. This is the GIDS case that matters most: we told a client to spend less. That only happens when the diagnosis comes before the decision.</p>
+        <div class="case-outcome-block">
+          <p class="case-outcome-label">Outcome</p>
+          <!-- JT_OUTCOME_3: Replace this block with outcome figures from John -->
+          <span class="pending-tag">⚠ JT_OUTCOME_3 — Client count / timeframe — pending from John</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Case 4 -->
+    <div class="case-full glass reveal reveal-delay-3">
+      <div class="case-meta">
+        <div class="case-number">04</div>
+        <span class="case-badge" style="color:var(--t3)">Rotating</span>
+        <p class="case-industry">Retail<br>Global</p>
+      </div>
+      <div class="case-body">
+        <p class="case-finding">A robust data science team focused entirely on statistical forecasting — and missing the unsupervised layer that would have made it work.</p>
+        <p class="case-label">The Situation</p>
+        <p class="t-body">A global retail company had a strong data science team running statistical forecasting models. The models were technically sound. The results were underwhelming. The team was being asked to do more with the same approach.</p>
+        <p class="case-label">What GIDS Found</p>
+        <p class="t-body">A skill gap in descriptive analytics. The unsupervised-to-supervised workflow was missing entirely. The team was skipping the step that would have told them who their customers actually were before trying to predict what they would do.</p>
+        <p class="case-label">What Changed</p>
+        <p class="t-body">Unsupervised learning was used to categorize customers by shopping habits, feeding segmentation into the forecasting practice — strengthening it, not competing with it. The two disciplines became complementary rather than parallel.</p>
+        <div class="case-outcome-block">
+          <p class="case-outcome-label">Outcome</p>
+          <!-- JT_OUTCOME_4: Replace this block with outcome figures from John -->
+          <span class="pending-tag">⚠ JT_OUTCOME_4 — Segments in production / forecast improvement — pending from John</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- More cases note -->
+    <div style="padding:32px 40px;border:1px dashed rgba(138,180,212,0.14);border-radius:2px;margin-top:2px;text-align:center" class="reveal">
+      <p class="t-body-sm">Additional cases from John's ongoing advisory practice are published weekly. <a href="https://gidsco.substack.com" target="_blank" style="color:var(--accent);text-decoration:none;border-bottom:1px solid rgba(138,180,212,0.3);padding-bottom:1px">Subscribe on Substack</a> to receive them as they publish.</p>
+    </div>
+
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- BOTTOM CTA -->
+<section style="padding:80px 0 100px">
+  <div class="container" style="text-align:center">
+    <h2 class="t-heading reveal" style="font-size:clamp(26px,3vw,44px);margin-bottom:16px">Your situation is in here somewhere.</h2>
+    <p class="t-body reveal reveal-delay-1" style="max-width:500px;margin:0 auto 32px">The upstream problem takes a different form in every organization. The diagnostic is the same.</p>
+    <div class="reveal reveal-delay-2">
+      <a href="GIDS-booking-08-18-2026_v1.html" class="btn">Request a Feasibility Assessment</a>
+      <p class="t-body-sm" style="margin-top:14px">The first conversation is a diagnosis, not a pitch.</p>
+    </div>
+  </div>
+</section>
+
+<footer style="padding:32px 0;border-top:1px solid rgba(255,255,255,0.05);text-align:center">
+  <p style="font-size:11px;color:var(--t3)">© 2026 Global Institute of Data Science · <a href="index.html" style="color:var(--t3);text-decoration:none">gids.co</a></p>
+</footer>
+
+<script>
+const io=new IntersectionObserver(e=>{e.forEach(ev=>{if(ev.isIntersecting){ev.target.classList.add('visible');io.unobserve(ev.target);}});},{threshold:0.08});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>
